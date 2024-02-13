@@ -5,8 +5,8 @@ export function App(){
 
     return (
         <div>
-            <SearchBar defaultText="Test Props"/>
-            <SearchBar defaultText="Deuxieme texte"/>
+            <SearchBar />
+            <SearchBar />
             <Clicker/>
         </div>
     );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export function SearchBar({defaultText}){
-    const [message, setMessage] = useState(defaultText);
+export function SearchBar(){
+    const [message, setMessage] = useState("");
 
     function handleMessage(event){
         setMessage( event.target.value );
@@ -9,7 +9,7 @@ export function SearchBar({defaultText}){
 
     return (
     <div>
-        <input type="text" value={defaultText} onChange={handleMessage}/>
+        <input type="text" onChange={handleMessage}/>
         <h1>{message}</h1>
     </div>
     );
