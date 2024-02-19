@@ -1,5 +1,5 @@
 
-export function Note({titre,contenu}){   
+export function Note({titre,contenu }){   
 
     return (
         <div>

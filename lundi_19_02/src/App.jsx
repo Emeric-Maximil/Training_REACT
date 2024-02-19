@@ -50,7 +50,7 @@ export function App({pokemons}){
         <div>
             <label >
                 <span>{maxAttaque}</span>
-                <input type="range"  max="100" defaultValue={50} onInput={handleAttaque}/>
+                <input type="range"  max="150" defaultValue={50} onInput={handleAttaque}/>
             </label>
 
             <button onClick={handleCroissant}>Trier par attaque</button>

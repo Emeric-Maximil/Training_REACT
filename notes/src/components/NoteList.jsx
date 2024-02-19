@@ -9,14 +9,15 @@ export function NoteList({notes, onNoteClick}){
 
         onNoteClick({
             titre : titre,
-            contenu : contenu
+            contenu : contenu,
+           
         });
     }
     
     const notesElements = notes.map(
         (note,i) => (
             <ul key={i} onClick={()=>{handleClick(note)}}>
-                <li><Note titre={note['titre']} contenu={note['contenu']}/></li>   
+                <li><Note titre={note['titre']} contenu={note['contenu']} /></li>   
             </ul>
             ));
 
